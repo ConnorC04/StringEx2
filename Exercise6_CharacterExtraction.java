@@ -16,7 +16,13 @@ public class Exercise6_CharacterExtraction {
         String word = scanner.nextLine();
         
         // TODO: Extract and print the first, last, and middle character(s)
-        
+
+        // I think I need to use word.length() for the middle characters
+
+        System.out.println("First character: " + word.charAt(0));
+        System.out.println("Last character: " + word.charAt(word.length() - 1));
+        System.out.println("Middle character(s): " + word.charAt((word.length()) / 2));
+
         scanner.close();
     }
 }
