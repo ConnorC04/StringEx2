@@ -19,8 +19,10 @@ public class Exercise5_FindingSubstrings {
         
         // TODO: Check if the word appears in the sentence using contains()
         // or indexOf() methods
-        if (sentence.equals(word)){
+        if (sentence.contains(word)){
             System.out.println("The word '" + word + "' was found in the sentence");
+        }else{
+            System.out.println("The word '" + word + "' was not found in the sentence");
         }
         scanner.close();
     }
