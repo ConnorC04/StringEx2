@@ -17,7 +17,13 @@ public class Exercise8_CountingOccurrences {
         char charToCount = scanner.nextLine().charAt(0);
         
         // TODO: Count and print the number of occurrences of the character
-        
+        int counter = 0;
+        for (int i = 0; i < input.length(); i++){
+            if (input.charAt(i) == charToCount){
+                counter++;
+            }
+        }
+        System.out.println("The character " + charToCount + " appears " + counter + " times in the string.");
         scanner.close();
     }
 }
