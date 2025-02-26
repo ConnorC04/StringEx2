@@ -4,6 +4,7 @@
  * Write a program that asks for a sentence and a word, then checks if
  * the word appears in the sentence.
  */
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Exercise5_FindingSubstrings {
@@ -18,7 +19,9 @@ public class Exercise5_FindingSubstrings {
         
         // TODO: Check if the word appears in the sentence using contains()
         // or indexOf() methods
-        
+        if (sentence.equals(word)){
+            System.out.println("The word '" + word + "' was found in the sentence");
+        }
         scanner.close();
     }
 }
